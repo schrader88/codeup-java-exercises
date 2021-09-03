@@ -21,6 +21,8 @@ public class ConsoleExercises {
 
 //        System.out.printf("The value of pi is approximately %.4s", pi);
 //        System.out.format("The value of pi is approximately %.4s", pi);
+//        System.out.printf("The value of pi is approximately %.2f", pi);
+//        System.out.format("The value of pi is approximately %.2f", pi);
 
 //        Scanner scanner = new Scanner(System.in);
 
@@ -28,13 +30,13 @@ public class ConsoleExercises {
 //        int nextInt = scanner.nextInt();
 //        System.out.println("The integer you entered is " + nextInt);
 
-//        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-//        System.out.print("Enter 3 words: ");
-//        String firstWord = scanner.next();
-//        String secondWord = scanner.next();
-//        String thirdWord = scanner.next();
-//        System.out.printf("These are your 3 words: %s, %s, %s", firstWord, secondWord, thirdWord);
+        System.out.print("Enter 3 words: ");
+        String firstWord = scanner.next();
+        String secondWord = scanner.next();
+        String thirdWord = scanner.next();
+        System.out.printf("These are your 3 words: %n%s%n%s%n%s%n", firstWord, secondWord, thirdWord);
 
 //        Scanner scanner = new Scanner(System.in);
 
@@ -79,22 +81,22 @@ public class ConsoleExercises {
 //    - output the number they entered
 //    - output if the number they entered indeed matched the number of words
 
-    Scanner scanner = new Scanner(System.in);
+//    Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Enter a quote: ");
-    String userQuote = scanner.nextLine();
-    System.out.println("Quote: " + userQuote);
-    System.out.println("How many words are in that quote? ");
-    int quoteLength = scanner.nextInt();
-    System.out.println("The quote has " + quoteLength + " word(s).");
+//    System.out.print("Enter a quote: ");
+//    String userQuote = scanner.nextLine();
+//    System.out.println("Quote: " + userQuote);
+//    System.out.println("How many words are in that quote? ");
+//    int quoteLength = scanner.nextInt();
+//    System.out.println("You entered that the quote has " + quoteLength + " word(s).");
 
-    String[] words = userQuote.split("\\s+");
+//    String[] words = userQuote.split("\\s+");
 
-    if (words.length == quoteLength) {
-        System.out.print("Yes, there are " + quoteLength + " words in that quote.");
-    } else {
-        System.out.print("I'm sorry, that is NOT the correct amount of words.");
-    }
+//    if (words.length == quoteLength) {
+//        System.out.print("Yes, there are " + quoteLength + " words in that quote.");
+//    } else {
+//        System.out.print("I'm sorry, that is NOT the correct amount of words.");
+//    }
 
 //2. Prompt the user to enter a list of top three favorite foods separated by only spaces
 //
@@ -103,6 +105,11 @@ public class ConsoleExercises {
 //        2. SecondFood
 //        3. ThirdFood
 
+//    Scanner scanner = new Scanner(System.in);
+
+//    System.out.print("Enter your three favorite foods (Ex: Food Food Food): ");
+//    String userFoods = scanner.nextLine();
+//    System.out.printf("");
 
 
 //3. Prompt the user to enter a grocery list of three items
