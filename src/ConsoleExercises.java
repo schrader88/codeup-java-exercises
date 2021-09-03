@@ -20,6 +20,7 @@ public class ConsoleExercises {
 //        double pi = 3.14159;
 
 //        System.out.printf("The value of pi is approximately %.4s", pi);
+//        System.out.format("The value of pi is approximately %.4s", pi);
 
 //        Scanner scanner = new Scanner(System.in);
 
@@ -42,13 +43,32 @@ public class ConsoleExercises {
 //        String userSentence = scanner.nextLine();
 //        System.out.printf("Your sentence is: %s", userSentence);
 
+//        Scanner scanner = new Scanner(System.in);
+
+//        System.out.print("Enter the LENGTH and WIDTH of a Codeup classroom: ");
+
+//        int userLength = Integer.parseInt(scanner.nextLine());
+//        int userWidth = Integer.parseInt(scanner.nextLine());
+
+//        System.out.println("The area of the classroom is " + (userLength * userWidth) + ". The perimeter of the classroom is: " + ((userLength * 2) + (userWidth * 2) + "."));
+
+        // Bonuses below:
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the LENGTH and WIDTH of a Codeup classroom: ");
-        int userLength = Integer.parseInt(scanner.nextLine());
-        int userWidth = Integer.parseInt(scanner.nextLine());
-        System.out.println("The area of the classroom is " + (userLength * userWidth) + ". The perimeter of the classroom is: " + ((userLength * 2) + (userWidth * 2) + "."));
+        // Confused at what this line below does:
 
+        scanner.useDelimiter("\n");
+
+        System.out.print("Enter the LENGTH, WIDTH, and HEIGHT of a Codeup classroom: ");
+
+        // Variables below allow decimal entries:
+
+        double userLength = scanner.nextDouble();
+        double userWidth = scanner.nextDouble();
+        double userHeight = scanner.nextDouble();
+
+        System.out.println("The area of the classroom is " + (userLength * userWidth) + ". The perimeter of the classroom is: " + ((userLength * 2) + (userWidth * 2)) + ". The volume of the classrooom is: " + (userLength * userWidth * userHeight) + ".");
     }
 
 }
