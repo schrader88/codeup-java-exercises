@@ -54,21 +54,62 @@ public class ConsoleExercises {
 
         // Bonuses below:
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
         // Confused at what this line below does:
 
-        scanner.useDelimiter("\n");
+//        scanner.useDelimiter("\n");
 
-        System.out.print("Enter the LENGTH, WIDTH, and HEIGHT of a Codeup classroom: ");
+//        System.out.print("Enter the LENGTH, WIDTH, and HEIGHT of a Codeup classroom: ");
 
         // Variables below allow decimal entries:
 
-        double userLength = scanner.nextDouble();
-        double userWidth = scanner.nextDouble();
-        double userHeight = scanner.nextDouble();
+//        double userLength = scanner.nextDouble();
+//        double userWidth = scanner.nextDouble();
+//        double userHeight = scanner.nextDouble();
 
-        System.out.println("The area of the classroom is " + (userLength * userWidth) + ". The perimeter of the classroom is: " + ((userLength * 2) + (userWidth * 2)) + ". The volume of the classrooom is: " + (userLength * userWidth * userHeight) + ".");
+//        System.out.println("The area of the classroom is " + (userLength * userWidth) + ". The perimeter of the classroom is: " + ((userLength * 2) + (userWidth * 2)) + ". The volume of the classrooom is: " + (userLength * userWidth * userHeight) + ".");
+
+
+//    # Console IO Bonus Exercises
+//
+//1. Prompt the user to enter a favorite quote
+//    - output the quote
+//    - ask them to enter how many words are in the quote
+//    - output the number they entered
+//    - output if the number they entered indeed matched the number of words
+
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter a quote: ");
+    String userQuote = scanner.nextLine();
+    System.out.println("Quote: " + userQuote);
+    System.out.println("How many words are in that quote? ");
+    int quoteLength = scanner.nextInt();
+    System.out.println("The quote has " + quoteLength + " word(s).");
+
+    String[] words = userQuote.split("\\s+");
+
+    if (words.length == quoteLength) {
+        System.out.print("Yes, there are " + quoteLength + " words in that quote.");
+    } else {
+        System.out.print("I'm sorry, that is NOT the correct amount of words.");
+    }
+
+//2. Prompt the user to enter a list of top three favorite foods separated by only spaces
+//
+//    - Use the printf() to output the three top foods with the format:
+//            1. FirstFood
+//        2. SecondFood
+//        3. ThirdFood
+
+
+
+//3. Prompt the user to enter a grocery list of three items
+//    - each item should only be separated by a comma (no spaces)
+//    - you will need to use the .useDelimiter() method on your scanner object
+//    - output the result as a comma-separated list using printf()
+
     }
 
 }
