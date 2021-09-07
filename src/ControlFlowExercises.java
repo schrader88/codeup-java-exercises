@@ -52,26 +52,50 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-        Scanner tableScanner = new Scanner(System.in);
+        // Table of Powers
 
-        System.out.print("What number would you like to go up to? ");
-        int userInt = tableScanner.nextInt();
-        System.out.println(" ");
-        System.out.println("Here is your table!");
-        System.out.println(" ");
-        System.out.println("number | squared | cubed");
-        System.out.println("______ | _______ | _____");
+//        Scanner tableScanner = new Scanner(System.in);
 
-        for (int i = 1; i <= userInt; ++i) {
-            int squared = i * i;
-            int cubed = squared * i;
-            if (squared > 10) {
-                System.out.println(i + "      | " + squared + "      | " + cubed + "    ");
-            } else {
-                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
-            }
+//        System.out.print("What number would you like to go up to? ");
+//        int userInt = tableScanner.nextInt();
+//        System.out.println(" ");
+//        System.out.println("Here is your table!");
+//        System.out.println(" ");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("______ | _______ | _____");
+
+//        for (int i = 1; i <= userInt; ++i) {
+//            int squared = i * i;
+//            int cubed = squared * i;
+//            if (squared > 10) {
+//                System.out.println(i + "      | " + squared + "      | " + cubed + "    ");
+//            } else {
+//                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
+//            }
+//        }
+
+//        System.out.println("Would you like to continue?");
+
+        // Letter Grade Converter
+
+        Scanner gradeScanner = new Scanner(System.in);
+
+        System.out.print("Please enter a grade between 0 and 100: ");
+        int userGrade = gradeScanner.nextInt();
+
+        if (userGrade < 59) {
+            System.out.println("Your letter grade is: F");
+        } else if (userGrade > 59 && userGrade < 67) {
+            System.out.println("Your letter grade is: D");
+        } else if (userGrade > 66 && userGrade < 80) {
+            System.out.println("Your letter grade is: C");
+        } else if (userGrade > 79 && userGrade < 88) {
+            System.out.println("Your letter grade is: B");
+        } else {
+            System.out.println("Your letter grade is: A");
         }
 
+        System.out.println("Would you like to continue?");
 
     }
 
