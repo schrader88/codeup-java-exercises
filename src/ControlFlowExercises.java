@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -38,15 +40,35 @@ public class ControlFlowExercises {
 
         // FizzBuzz Test
 
-        for (int i = 1; i <= 100; i++) {
-            if (i % 5 == 0 && i % 3 ==0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 5 == 0 && i % 3 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
+        Scanner tableScanner = new Scanner(System.in);
+
+        System.out.print("What number would you like to go up to? ");
+        int userInt = tableScanner.nextInt();
+        System.out.println(" ");
+        System.out.println("Here is your table!");
+        System.out.println(" ");
+        System.out.println("number | squared | cubed");
+        System.out.println("______ | _______ | _____");
+
+        for (int i = 1; i <= userInt; ++i) {
+            int squared = i * i;
+            int cubed = squared * i;
+            if (squared > 10) {
+                System.out.println(i + "      | " + squared + "      | " + cubed + "    ");
             } else {
-                System.out.println(i);
+                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
             }
         }
 
