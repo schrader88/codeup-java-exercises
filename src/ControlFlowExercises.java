@@ -70,6 +70,10 @@ public class ControlFlowExercises {
 
 //        Scanner tableScanner = new Scanner(System.in);
 
+//        String userChoice = "";
+
+//        do {
+//
 //        System.out.print("What number would you like to go up to? ");
 //        int userInt = tableScanner.nextInt();
 //        System.out.println(" ");
@@ -77,7 +81,7 @@ public class ControlFlowExercises {
 //        System.out.println(" ");
 //        System.out.println("number | squared | cubed");
 //        System.out.println("______ | _______ | _____");
-
+//
 //        for (int i = 1; i <= userInt; ++i) {
 //            int squared = i * i;
 //            int cubed = squared * i;
@@ -87,6 +91,11 @@ public class ControlFlowExercises {
 //                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
 //            }
 //        }
+//
+//            System.out.println("Would you like to continue? (choose yes/no)");
+//            userChoice = tableScanner.next();
+//
+//        } while(userChoice.equals("yes"));
 
 //        System.out.println("Would you like to continue?");
 
