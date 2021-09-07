@@ -24,6 +24,14 @@ public class ControlFlowExercises {
 //            i *= i;
 //        } while (i > 0 && i < 1000000);
 
+        // Unless data-type changed to "long" :
+
+//        long i = 2;
+//        do {
+//            System.out.println(i);
+//            i *= i;
+//        } while (i < 1000000);
+
         // Above code will be refactored to For loops below:
 
 //        for (int i = 5; i <= 15; i++) {
@@ -35,6 +43,12 @@ public class ControlFlowExercises {
 //        }
 
 //        for (int i = 2; i > 0 && i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
+
+        // Unless data-type changed to "long" :
+
+//        for (long i = 2; i < 1000000; i *= i) {
 //            System.out.println(i);
 //        }
 
@@ -78,24 +92,31 @@ public class ControlFlowExercises {
 
         // Letter Grade Converter
 
-        Scanner gradeScanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please enter a grade between 0 and 100: ");
-        int userGrade = gradeScanner.nextInt();
+//        String userContinue = "";
 
-        if (userGrade < 59) {
-            System.out.println("Your letter grade is: F");
-        } else if (userGrade > 59 && userGrade < 67) {
-            System.out.println("Your letter grade is: D");
-        } else if (userGrade > 66 && userGrade < 80) {
-            System.out.println("Your letter grade is: C");
-        } else if (userGrade > 79 && userGrade < 88) {
-            System.out.println("Your letter grade is: B");
-        } else {
-            System.out.println("Your letter grade is: A");
-        }
-
-        System.out.println("Would you like to continue?");
+//        do {
+//
+//            System.out.print("Please enter a grade between 0 and 100: ");
+//            int userGrade = scanner.nextInt();
+//
+//            if (userGrade < 59) {
+//                System.out.println("Your letter grade is: F");
+//            } else if (userGrade > 59 && userGrade < 67) {
+//                System.out.println("Your letter grade is: D");
+//            } else if (userGrade > 66 && userGrade < 80) {
+//                System.out.println("Your letter grade is: C");
+//            } else if (userGrade > 79 && userGrade < 88) {
+//                System.out.println("Your letter grade is: B");
+//            } else {
+//                System.out.println("Your letter grade is: A");
+//            }
+//
+//            System.out.println("Would you like to continue? (choose yes/no)");
+//            userContinue = scanner.next();
+//
+//        } while(userContinue.equals("yes"));
 
     }
 
