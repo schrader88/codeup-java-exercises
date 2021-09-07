@@ -13,7 +13,7 @@ public class ControlFlowExercises {
 //            i -= 5;
 //        } while (i >= -10);
 
-        // Below will cause an infinite loop unless i is set to (i > 0) in the while. Why?
+        // Below will cause an infinite loop unless it is set to (i > 0) in the while. Why?
         // Will infinite loop if while is set to any number higher than 65536.
 
 //        int i = 2;
@@ -24,6 +24,17 @@ public class ControlFlowExercises {
 
         // Above code will be refactored to For loops below:
 
+//        for (int i = 5; i <= 15; i++) {
+//            System.out.print(i + " ");
+//        }
+
+//        for (int i = 100; i >= -10; i -= 5) {
+//            System.out.println(i);
+//        }
+
+//        for (int i = 2; i > 0 && i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
 
 
     }
