@@ -38,6 +38,10 @@ public class ControlFlowExercises {
 //            System.out.print(i + " ");
 //        }
 
+//        for (int i = 0; i <= 100; i += 2) {
+//            System.out.println(i);
+//        }
+
 //        for (int i = 100; i >= -10; i -= 5) {
 //            System.out.println(i);
 //        }
@@ -68,41 +72,41 @@ public class ControlFlowExercises {
 
         // Table of Powers
 
-        Scanner tableScanner = new Scanner(System.in);
+//        Scanner tableScanner = new Scanner(System.in);
 
-        String userChoice = "";
+//        String userChoice = "";
 
-        do {
-
-        System.out.print("What number would you like to go up to? ");
-        int userInt = tableScanner.nextInt();
-        System.out.println(" ");
-        System.out.println("Here is your table!");
-        System.out.println(" ");
-        System.out.println("number | squared | cubed");
-        System.out.println("______ | _______ | _____");
-
-        for (int i = 1; i <= userInt; ++i) {
-            // My solution:
-
-//            int squared = i * i;
-//            int cubed = squared * i;
-//            if (squared > 10) {
-//                System.out.println(i + "      | " + squared + "      | " + cubed + "    ");
-//            } else {
-//                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
-//            }
-
-            // Shelby's brother's solution:
-
-            System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i*i*i);
-
-        }
-
-            System.out.println("Would you like to continue? (choose yes/no)");
-            userChoice = tableScanner.next();
-
-        } while(userChoice.equals("yes"));
+//        do {
+//
+//        System.out.print("What number would you like to go up to? ");
+//        int userInt = tableScanner.nextInt();
+//        System.out.println(" ");
+//        System.out.println("Here is your table!");
+//        System.out.println(" ");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//
+//        for (int i = 1; i <= userInt; ++i) {
+//            // My solution:
+//
+////            int squared = i * i;
+////            int cubed = squared * i;
+////            if (squared > 10) {
+////                System.out.println(i + "      | " + squared + "      | " + cubed + "    ");
+////            } else {
+////                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
+////            }
+//
+//            // Shelby's brother's solution:
+//
+//            System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i*i*i);
+//
+//        }
+//
+//            System.out.println("Would you like to continue? (choose yes/no)");
+//            userChoice = tableScanner.next();
+//
+//        } while(userChoice.equals("yes"));
 
 //        System.out.println("Would you like to continue?");
 
