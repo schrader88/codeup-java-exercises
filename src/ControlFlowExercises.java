@@ -68,21 +68,23 @@ public class ControlFlowExercises {
 
         // Table of Powers
 
-//        Scanner tableScanner = new Scanner(System.in);
+        Scanner tableScanner = new Scanner(System.in);
 
-//        String userChoice = "";
+        String userChoice = "";
 
-//        do {
-//
-//        System.out.print("What number would you like to go up to? ");
-//        int userInt = tableScanner.nextInt();
-//        System.out.println(" ");
-//        System.out.println("Here is your table!");
-//        System.out.println(" ");
-//        System.out.println("number | squared | cubed");
-//        System.out.println("______ | _______ | _____");
-//
-//        for (int i = 1; i <= userInt; ++i) {
+        do {
+
+        System.out.print("What number would you like to go up to? ");
+        int userInt = tableScanner.nextInt();
+        System.out.println(" ");
+        System.out.println("Here is your table!");
+        System.out.println(" ");
+        System.out.println("number | squared | cubed");
+        System.out.println("______ | _______ | _____");
+
+        for (int i = 1; i <= userInt; ++i) {
+            // My solution:
+
 //            int squared = i * i;
 //            int cubed = squared * i;
 //            if (squared > 10) {
@@ -90,12 +92,17 @@ public class ControlFlowExercises {
 //            } else {
 //                System.out.println(i + "      | " + squared + "       | " + cubed + "    ");
 //            }
-//        }
-//
-//            System.out.println("Would you like to continue? (choose yes/no)");
-//            userChoice = tableScanner.next();
-//
-//        } while(userChoice.equals("yes"));
+
+            // Shelby's brother's solution:
+
+            System.out.printf("%-7d| %-8d| %-5d%n", i, i*i, i*i*i);
+
+        }
+
+            System.out.println("Would you like to continue? (choose yes/no)");
+            userChoice = tableScanner.next();
+
+        } while(userChoice.equals("yes"));
 
 //        System.out.println("Would you like to continue?");
 
@@ -127,6 +134,44 @@ public class ControlFlowExercises {
 //
 //        } while(userContinue.equals("yes"));
 
+//        Bonus exercise -- the PIN code (may require a break statement)
+//
+//        You have to design the code such that the user has only three tries to guess the correct pin of the account. You set the pin as a constant with a final attribute. When correct display "Correct, welcome back." When incorrect display "Incorrect, try again.". When ran out of tries display "Sorry but you have been locked out."
+//        program Starts:
+//```
+//        Please enter pin:
+//        22132
+//        Output:
+//        Incorrect, try again.
+//                Please enter pin:
+//        23412
+//        Output:
+//        Incorrect, try again.
+//                Please enter pin:
+//        12345
+//        Output:
+//        Correct, welcome back.
+
+//        final int PIN = 1234;
+//        Scanner scanner = new Scanner(System.in);
+//        int attempts = 3;
+//        int userPin;
+//
+//        do {
+//            System.out.print("Please Enter PIN: ");
+//            userPin = scanner.nextInt();
+//            System.out.println(userPin);
+//            System.out.println("Output:");
+//
+//            if (userPin == PIN) {
+//                System.out.println("Correct, welcome back.");
+//                break;
+//            } else {
+//                System.out.println("Incorrect, try again.");
+//            }
+//        } while (--attempts > 0);
+
+//        System.out.println("Sorry, you have been locked out.");
     }
 
 }
