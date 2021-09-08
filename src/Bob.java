@@ -9,9 +9,19 @@ public class Bob {
 
         String userInput = scanner.nextLine();
 
-        if (userInput.contains("?")) {
+//        if (userInput.contains("?")) {
+//            System.out.println("Sure.");
+//        } else if (userInput.contains("!")) {
+//            System.out.println("Whoa, chill out!");
+//        } else if (userInput.equals("")) {
+//            System.out.println("Fine. Be that way!");
+//        } else {
+//            System.out.println("Whatever.");
+//        }
+
+        if (userInput.endsWith("?")) {
             System.out.println("Sure.");
-        } else if (userInput.contains("!")) {
+        } else if (userInput.endsWith("!")) {
             System.out.println("Whoa, chill out!");
         } else if (userInput.equals("")) {
             System.out.println("Fine. Be that way!");
