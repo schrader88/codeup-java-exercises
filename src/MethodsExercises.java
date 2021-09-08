@@ -8,7 +8,7 @@ public class MethodsExercises {
         Multiplication(10, 5);
         Division(10, 5);
         Modulus(10, 5);
-//        getInteger();
+        getInteger(1, 10);
     }
 
     public static void Addition(int number, int numberTwo) {
@@ -69,10 +69,18 @@ public class MethodsExercises {
     // Refactoring above method below. Using recursion:
 
     public static int getInteger(int min, int max) {
-        System.out.print("Enter a number between 1 and 10: ");
-        int userInput = getInteger(1, 10);
+        Scanner scanner = new Scanner(System.in);
 
-        return userInput;
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = scanner.nextInt();
+
+        if (userInput > min && userInput < max) {
+            System.out.println("Nice! " + userInput + " is between 1 and 10.");
+            return userInput;
+        }
+
+        System.out.println(userInput + " is not in between 1 and 10.");
+        return getInteger(1, 10);
     }
 
 }
