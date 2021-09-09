@@ -8,7 +8,8 @@ public class MethodsExercises {
         Multiplication(10, 5);
         Division(10, 5);
         Modulus(10, 5);
-        getInteger(1, 10);
+//        getInteger(1, 10);
+        getFactorial();
     }
 
     public static void Addition(int number, int numberTwo) {
@@ -68,19 +69,45 @@ public class MethodsExercises {
 
     // Refactoring above method below. Using recursion:
 
-    public static int getInteger(int min, int max) {
+//    public static int getInteger(int min, int max) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter a number between 1 and 10: ");
+//        int userInput = scanner.nextInt();
+//
+//        if (userInput > min && userInput < max) {
+//            System.out.println("Nice! " + userInput + " is between 1 and 10.");
+//            return userInput;
+//        }
+//
+//        System.out.println(userInput + " is not in between 1 and 10.");
+//        return getInteger(1, 10);
+//    }
+
+    public static void getFactorial() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a number between 1 and 10: ");
-        int userInput = scanner.nextInt();
+        String userContinue = "";
 
-        if (userInput > min && userInput < max) {
-            System.out.println("Nice! " + userInput + " is between 1 and 10.");
-            return userInput;
-        }
+        do {
 
-        System.out.println(userInput + " is not in between 1 and 10.");
-        return getInteger(1, 10);
+            System.out.println("Enter an integer from 1 to 10: ");
+            int userInteger = scanner.nextInt();
+            int fact = 1;
+
+            for (int i = 1; i <= userInteger; i++) {
+//                if (userInteger > 10 || userInteger < 1) {
+//                    System.out.println("That number is not between 1 and 10.");
+//                    break;
+//                }
+                fact *= i;
+            }
+            System.out.println("The factorial of " + userInteger + " is " + fact);
+
+            System.out.println("Would you like to continue? (choose yes/no)");
+            userContinue = scanner.next();
+
+        } while (userContinue.equals("yes"));
     }
 
 }
