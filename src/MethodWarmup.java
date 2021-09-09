@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodWarmup {
 //    TODO: create a class, MethodWarmup, and add an empty main method.
 //    TODO: create a method, getDifference, that takes in two integers and returns the difference between the higher integer and the lower integer (subtract).
@@ -10,6 +12,7 @@ public class MethodWarmup {
         System.out.println(getDifference(2.63, 9.58));
         System.out.println(getDifference(9));
         System.out.println(addNums(5));
+        System.out.println("You say " + getHello() + ", I say howdy!");
     }
 
     // Code below works. Returns sout of difference and not difference:
@@ -64,5 +67,19 @@ public class MethodWarmup {
             return num;
         }
         return addNums(num - 1) + num;
+     }
+
+    // TODO: use recursion to ensure only the user input of "hello" is returned from the function
+
+     public static String getHello() {
+         Scanner scanner = new Scanner(System.in);
+         System.out.println("Please enter the word \"hello\": ");
+         String userResponse = scanner.next();
+
+         if (userResponse.equalsIgnoreCase("hello")) {
+             return userResponse;
+         } else {
+             return getHello();
+         }
      }
 }
