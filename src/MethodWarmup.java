@@ -9,6 +9,7 @@ public class MethodWarmup {
         System.out.println(getDifference(2, 9));
         System.out.println(getDifference(2.63, 9.58));
         System.out.println(getDifference(9));
+        System.out.println(addNums(5));
     }
 
     // Code below works. Returns sout of difference and not difference:
@@ -52,4 +53,16 @@ public class MethodWarmup {
     public static int getDifference(int oneInt) {
         return oneInt - 0;
     }
+
+    // TODO: use recursion to add all numbers up, from 1 to the given number input
+    /*
+        addNums(5) would trigger a calculation of...
+            5 + 4 + 3 + 2 + 1, evaluating to 15
+     */
+     public static int addNums(int num) {
+        if (num <= 1) {
+            return num;
+        }
+        return addNums(num - 1) + num;
+     }
 }
