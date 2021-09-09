@@ -10,7 +10,7 @@ public class MethodsExercises {
 //        Modulus(10, 5);
 //        getInteger(1, 10);
 //        getFactorial();
-        System.out.println(getFactorial(4));
+//        System.out.println(getFactorial(4));
 //        diceRoll();
     }
 
@@ -83,7 +83,7 @@ public class MethodsExercises {
         }
 
         System.out.println(userInput + " is not in between 1 and 10.");
-        return getInteger(1, 10);
+        return getInteger(min, max);
     }
 
     // Factorial method below, without recursion:
