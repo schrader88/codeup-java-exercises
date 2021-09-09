@@ -7,6 +7,7 @@ public class MethodWarmup {
 
     public static void main(String[] args) {
         System.out.println(getDifference(2, 9));
+        System.out.println(getDifference(2.63, 9.58));
         System.out.println(getDifference(9));
     }
 
@@ -33,6 +34,20 @@ public class MethodWarmup {
             return firstInt - secInt;
         }
     }
+
+    // Overloading below. One for a "double" data type:
+
+    public static double getDifference(double firstInt, double secInt) {
+        if (firstInt > secInt) {
+            return firstInt - secInt;
+        } else if (firstInt < secInt) {
+            return secInt - firstInt;
+        } else {
+            return firstInt - secInt;
+        }
+    }
+
+    // Overloading below. This is for one entry, not two:
 
     public static int getDifference(int oneInt) {
         return oneInt - 0;
