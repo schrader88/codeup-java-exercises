@@ -10,7 +10,8 @@ public class MethodsExercises {
 //        Modulus(10, 5);
 //        getInteger(1, 10);
 //        getFactorial();
-        diceRoll();
+        System.out.println(getFactorial(4));
+//        diceRoll();
     }
 
     public static void Addition(int number, int numberTwo) {
@@ -85,37 +86,49 @@ public class MethodsExercises {
         return getInteger(1, 10);
     }
 
-    // Will refactor to use recursion.
+    // Factorial method below, without recursion:
 
-    public static void getFactorial() {
-        Scanner scanner = new Scanner(System.in);
+//    public static void getFactorial() {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        String userContinue = "";
+//
+//        do {
+//
+//            // Changed the max to 20 for bonus. Highest factorial possible with "long" data type:
+//
+////            System.out.println("Enter an integer from 1 to 10: ");
+//            System.out.println("Enter an integer from 1 to 20: ");
+//            int userInteger = scanner.nextInt();
+//            long fact = 1;
+//
+////            if (userInteger > 10 || userInteger < 1) {
+//            if (userInteger > 20 || userInteger < 1) {
+////                System.out.println("That number is not between 1 and 10.");
+//                System.out.println("That number is not between 1 and 20.");
+//            } else {
+//                for (int i = 1; i <= userInteger; i++) {
+//                    fact *= i;
+//                }
+//                System.out.println("The factorial of " + userInteger + " is " + fact);
+//            }
+//
+//            System.out.println("Would you like to continue? (choose yes/no)");
+//            userContinue = scanner.next();
+//
+//        } while (userContinue.equals("yes"));
+//    }
 
-        String userContinue = "";
+    // Factorial method below, recursive:
 
-        do {
+    // Still need to find out how to ask if the user would like to continue/enter a new number (w/ recursive)
 
-            // Changed the max to 20 for bonus. Highest factorial possible with "long" data type:
-
-//            System.out.println("Enter an integer from 1 to 10: ");
-            System.out.println("Enter an integer from 1 to 20: ");
-            int userInteger = scanner.nextInt();
-            long fact = 1;
-
-//            if (userInteger > 10 || userInteger < 1) {
-            if (userInteger > 20 || userInteger < 1) {
-//                System.out.println("That number is not between 1 and 10.");
-                System.out.println("That number is not between 1 and 20.");
+    public static int getFactorial(int num) {
+            if (num == 0) {
+                return 1;
             } else {
-                for (int i = 1; i <= userInteger; i++) {
-                    fact *= i;
-                }
-                System.out.println("The factorial of " + userInteger + " is " + fact);
+                return getFactorial(num - 1) * num;
             }
-
-            System.out.println("Would you like to continue? (choose yes/no)");
-            userContinue = scanner.next();
-
-        } while (userContinue.equals("yes"));
     }
 
     public static void diceRoll() {
