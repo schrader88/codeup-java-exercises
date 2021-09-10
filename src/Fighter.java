@@ -1,10 +1,29 @@
 public class Fighter {
     // instance variables
     public String name;
-    public int hitPoints;
-    public int maxDamage;
+    private int hitPoints;
+    private int maxDamage;
 
     // methods
+
+    public void setHitPoints(int hitPoints) {
+        this.hitPoints = hitPoints;
+    }
+
+    public int getHitPoints() {
+        System.out.println(hitPoints);
+        return hitPoints;
+    }
+
+    public void setMaxDamage(int hitPoints) {
+        this.maxDamage = hitPoints;
+    }
+
+    public int getMaxDamage() {
+        System.out.println(maxDamage);
+        return maxDamage;
+    }
+
     public void printStats(){
         System.out.println(name + " has " + hitPoints + " hit points and can do " + maxDamage + " damage.");
     }

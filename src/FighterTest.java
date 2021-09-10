@@ -16,5 +16,11 @@ public class FighterTest {
 
         System.out.println(Club.maxDamage);
         System.out.println(Integer.MAX_VALUE);
+
+        arata.setHitPoints(5);
+        arata.getHitPoints();
+
+        sozalix.setMaxDamage(12);
+        sozalix.getMaxDamage();
     }
 }
