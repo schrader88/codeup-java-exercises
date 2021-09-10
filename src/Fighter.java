@@ -13,6 +13,10 @@ public class Fighter {
         System.out.println("I am " + name + ", prepare to be defeated!");
     }
 
+    public int attackRoll(){
+        return D20.roll20();
+    }
+
     // DON'T DO THIS: PUT THE MAIN METHOD IN THE CLASS DEFINITION
     // Instead, create a Test class rather than testing in main of the same class
 //    public static void main(String[] args) {

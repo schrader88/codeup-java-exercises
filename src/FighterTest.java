@@ -12,5 +12,6 @@ public class FighterTest {
         sozalix.name = "Soalix";
         sozalix.battleRoar();
         sozalix.printStats();
+        System.out.println("Sozalix attacks and rolls a " + sozalix.attackRoll());
     }
 }
