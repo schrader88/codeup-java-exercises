@@ -10,4 +10,14 @@ public class Kangaroo {
     public void hippityHoppity(){
         System.out.println(name + " jumps around the room! Vibin' and bouncin'!");
     }
+
+    public Kangaroo() {
+
+    }
+
+    public  Kangaroo(String name, String sound) {
+        this.name = name;
+        this.sound = sound;
+        System.out.println(sound + " goes " + name);
+    }
 }

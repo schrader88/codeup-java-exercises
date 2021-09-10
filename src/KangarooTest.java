@@ -1,9 +1,9 @@
 public class KangarooTest {
     public static void main(String[] args) {
-        Kangaroo kanga = new Kangaroo();
-        kanga.name = "Kanga";
-        kanga.sound = "BOING";
-        kanga.makeNoise();
-        kanga.hippityHoppity();
+        Kangaroo kanga = new Kangaroo("Kanga", "BOING");
+//        kanga.name = "Kanga";
+//        kanga.sound = "BOING";
+//        kanga.makeNoise();
+//        kanga.hippityHoppity();
     }
 }
