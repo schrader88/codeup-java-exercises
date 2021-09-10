@@ -13,5 +13,8 @@ public class FighterTest {
         sozalix.battleRoar();
         sozalix.printStats();
         System.out.println("Sozalix attacks and rolls a " + sozalix.attackRoll());
+
+        System.out.println(Club.maxDamage);
+        System.out.println(Integer.MAX_VALUE);
     }
 }
