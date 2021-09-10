@@ -3,7 +3,8 @@ public class Kangaroo {
     public String sound;
 
     public void makeNoise(){
-        System.out.println(name + " goes " + sound);
+//        System.out.println(name + " goes " + sound);
+        System.out.println(Quote.randomQuote());
     }
 
     public void hippityHoppity(){
