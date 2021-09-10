@@ -17,6 +17,19 @@ public class Fighter {
         return D20.roll20();
     }
 
+    // Default constructor
+    public Fighter() {
+
+    }
+
+    public Fighter(String name, int hitPoints, int maxDamage) {
+        System.out.println("A new fighter has emerged.");
+        this.name = name;
+        this.hitPoints = hitPoints;
+        this.maxDamage = maxDamage;
+        this.printStats();
+    }
+
     // DON'T DO THIS: PUT THE MAIN METHOD IN THE CLASS DEFINITION
     // Instead, create a Test class rather than testing in main of the same class
 //    public static void main(String[] args) {
