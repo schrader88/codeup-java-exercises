@@ -5,5 +5,11 @@ public class KangarooTest {
 //        kanga.sound = "BOING";
 //        kanga.makeNoise();
 //        kanga.hippityHoppity();
+
+        kanga.setName("Mr. Roo");
+        kanga.getName();
+
+        kanga.setSound("THOOM");
+        kanga.getSound();
     }
 }

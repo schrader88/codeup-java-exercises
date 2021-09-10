@@ -1,6 +1,24 @@
 public class Kangaroo {
-    public String name;
-    public String sound;
+    private String name;
+    private String sound;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        System.out.println(name);
+        return this.name;
+    }
+
+    public void setSound(String sound) {;
+        this.sound = sound;
+    }
+
+    public String getSound() {
+        System.out.println(sound);
+        return this.sound;
+    }
 
     public void makeNoise(){
 //        System.out.println(name + " goes " + sound);
