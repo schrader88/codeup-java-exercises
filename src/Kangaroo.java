@@ -33,7 +33,7 @@ public class Kangaroo {
 
     }
 
-    public  Kangaroo(String name, String sound) {
+    public Kangaroo(String name, String sound) {
         this.name = name;
         this.sound = sound;
         System.out.println(sound + " goes " + name);
