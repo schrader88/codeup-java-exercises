@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class MoviesApplication {
     public static void main(String[] args) {
         Input input = new Input();
+        Movie movie = new Movie();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -25,20 +26,26 @@ public class MoviesApplication {
 
             userInput = scanner.nextInt();
 
-            if (userInput == 0) {
-
-            } else if (userInput == 1) {
-
-            } else if (userInput == 2) {
-
-            } else if (userInput == 3) {
-
-            } else if (userInput == 4) {
-
-            } else if (userInput == 5) {
-
-            } else {
-                System.out.println("That is not a valid response. Please try again.");
+            for (int i = 0; i < MoviesArray.findAll().length; i++) {
+                if (userInput == 0) {
+                    break;
+                } else if (userInput == 1) {
+                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                } else if (userInput == 2) {
+                    movie.setCategory("animated");
+                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                } else if (userInput == 3) {
+                    movie.setCategory("drama");
+                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                } else if (userInput == 4) {
+                    movie.setCategory("horror");
+                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                } else if (userInput == 5) {
+                    movie.setCategory("scifi");
+                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                } else {
+                    System.out.println("That is not a valid response. Please try again.");
+                }
             }
 
             System.out.println("Would you like to continue? ");
