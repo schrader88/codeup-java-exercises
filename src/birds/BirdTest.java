@@ -15,5 +15,12 @@ public class BirdTest {
         mallard.makeNoise();
         System.out.println(mallard.getName() + " goes: ");
         mallard.move();
+
+        Finch goldFinch = new Finch();
+        goldFinch.setName("Goldfinch");
+        System.out.println(goldFinch.getName() + " says: ");
+        goldFinch.makeNoise();
+        System.out.println(goldFinch.getName() + " goes: ");
+        goldFinch.move();
     }
 }
