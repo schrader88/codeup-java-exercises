@@ -13,8 +13,20 @@ public class GarageTest {
         vehicles[3] = new Car();
         vehicles[3].setName("Honda Accord");
 
+        FourWheeler greenFourWheeler = new FourWheeler();
+        greenFourWheeler.setName("Big Green Four Wheeler");
+        vehicles[2] = greenFourWheeler;
+
         Garage myGarage = new Garage();
 
         myGarage.alarmCascade(vehicles);
+
+        // Bonus:
+
+        Vehicle customerVehicle = myGarage.findVehicle("NOT Harley", vehicles);
+        Vehicle customerVehicle2 = myGarage.findVehicle("Big Green Four Wheeler", vehicles);
+
+        System.out.println(customerVehicle.getName());
+        System.out.println(customerVehicle2.getName());
     }
 }
