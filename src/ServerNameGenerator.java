@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class ServerNameGenerator {
-    public String[] adjectives = {"Charming", "Cruel", "Fantastic", "Gentle", "Huge", "Perfect", "Rough", "Sharp", "Tasty", "Zealous"};
-    public String[] nouns = {"Milk", "Rain", "Tablecloth", "Orange", "Basketball", "Door", "Perfume", "Laser", "Pretzel", "School"};
+    private String[] adjectives = {"Charming", "Cruel", "Fantastic", "Gentle", "Huge", "Perfect", "Rough", "Sharp", "Tasty", "Zealous"};
+    private String[] nouns = {"Milk", "Rain", "Tablecloth", "Orange", "Basketball", "Door", "Perfume", "Laser", "Pretzel", "School"};
 
     public static String randomElementFromArray(String[] arr1, String[] arr2) {
         int random = new Random().nextInt(arr1.length);
