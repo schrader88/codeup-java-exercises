@@ -1,4 +1,6 @@
-public class FourWheeler extends Vehicle{
+package cars;
+
+public class FourWheeler extends Vehicle {
 
     public void makeNoise() {
         System.out.println("ERRRRRRRR");
