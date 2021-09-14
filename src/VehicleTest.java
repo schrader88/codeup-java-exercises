@@ -7,7 +7,12 @@ public class VehicleTest {
 
         FourWheeler fourWheeler = new FourWheeler();
         fourWheeler.setName("Four Wheeler");
+
+//        System.out.println(fourWheeler.getName() + " goes: ");
+//        fourWheeler.makeNoise();
+
         System.out.println(fourWheeler.getName() + " goes: ");
-        fourWheeler.makeNoise();
+        fourWheeler.breakingDownNoise();
+
     }
 }
