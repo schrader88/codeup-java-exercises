@@ -1,12 +1,13 @@
 package movies;
 
-import util.Input;
+//import util.Input;
 import java.util.Scanner;
 
 public class MoviesApplication {
     public static void main(String[] args) {
-        Input input = new Input();
-        Movie movie = new Movie();
+        // Refactor to use Input class instead of creating a new Scanner
+
+//        Input input = new Input();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -23,28 +24,35 @@ public class MoviesApplication {
         System.out.println("3 - view all movies in the drama category");
         System.out.println("4 - view all movies in the horror category");
         System.out.println("5 - view all movies in the sci-fi category");
+        System.out.println("6 - view all movies in the musical category");
 
+        System.out.println("Enter response here: ");
             userInput = scanner.nextInt();
 
-            for (int i = 0; i < MoviesArray.findAll().length; i++) {
+            for (Movie movies : MoviesArray.findAll()) {
                 if (userInput == 0) {
                     break;
                 } else if (userInput == 1) {
-                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                    System.out.println(movies.getName() + " -- " + movies.getCategory());
                 } else if (userInput == 2) {
-                    movie.setCategory("animated");
-                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                    if (movies.getCategory().equals("animated")) {
+                        System.out.println(movies.getName() + " -- " + movies.getCategory());
+                    }
                 } else if (userInput == 3) {
-                    movie.setCategory("drama");
-                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                    if (movies.getCategory().equals("drama")) {
+                        System.out.println(movies.getName() + " -- " + movies.getCategory());
+                    }
                 } else if (userInput == 4) {
-                    movie.setCategory("horror");
-                    System.out.println(movie.getName() + " -- " + movie.getCategory());
+                    if (movies.getCategory().equals("horror"))
+                        System.out.println(movies.getName() + " -- " + movies.getCategory());
                 } else if (userInput == 5) {
-                    movie.setCategory("scifi");
-                    System.out.println(movie.getName() + " -- " + movie.getCategory());
-                } else {
-                    System.out.println("That is not a valid response. Please try again.");
+                    if (movies.getCategory().equals("scifi")) {
+                        System.out.println(movies.getName() + " -- " + movies.getCategory());
+                    }
+                } else if (userInput == 6) {
+                    if (movies.getCategory().equals("musical")) {
+                        System.out.println(movies.getName() + " -- " + movies.getCategory());
+                    }
                 }
             }
 
