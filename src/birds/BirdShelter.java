@@ -9,4 +9,8 @@ public class BirdShelter {
             bird.makeNoise();
         }
     }
+
+    public void takeCareOfTheBirdie(Bird birdPatient) {
+        birdPatient.makeNoise();
+    }
 }

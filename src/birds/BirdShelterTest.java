@@ -16,5 +16,6 @@ public class BirdShelterTest {
         BirdShelter healingWings = new BirdShelter();
 
         healingWings.visitShelterAndHearThePrettyBirdies(birds);
+        healingWings.takeCareOfTheBirdie(birds[0]);
     }
 }
