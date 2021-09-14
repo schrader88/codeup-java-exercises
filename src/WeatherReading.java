@@ -10,7 +10,7 @@ public class WeatherReading {
         this.latitude = latitude;
         this.longitude = longitude;
         this.recordedAt = recordedAt;
-        this.tempInCelsius = tempInKelvin;
+        this.tempInCelsius = kelvinToCelsius(tempInKelvin);
     }
 
     public static double kelvinToCelsius(double tempInKelvin) {
@@ -30,7 +30,6 @@ public class WeatherReading {
     }
 
     public double getTempInCelsius() {
-        tempInCelsius = tempInCelsius - 273.15;
         return tempInCelsius;
     }
 
