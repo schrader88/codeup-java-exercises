@@ -1,4 +1,4 @@
-package cars;
+package vehicles;
 
 public class Motorcycle extends Vehicle{
 }
