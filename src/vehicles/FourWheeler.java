@@ -18,4 +18,8 @@ public class FourWheeler extends Vehicle {
     public FourWheeler(String name) {
         super(name);
     }
+
+    public void setName(String fourWheelerName) {
+        super.name = fourWheelerName;
+    }
 }

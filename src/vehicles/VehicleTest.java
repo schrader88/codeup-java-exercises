@@ -9,10 +9,10 @@ public class VehicleTest {
 
         // Below is with the constructor that accepts a string as an arg:
 
-        Vehicle vehicle = new Vehicle("Generic Car");
+//        Vehicle vehicle = new Vehicle("Generic Car");
 
-        System.out.println(vehicle.getName() + " goes: ");
-        vehicle.makeNoise();
+//        System.out.println(vehicle.getName() + " goes: ");
+//        vehicle.makeNoise();
 
         // Below is with default constructor (or no arg constructor)
 
@@ -21,25 +21,34 @@ public class VehicleTest {
 
         // Below is with the constructor that accepts a string as an arg:
 
-        FourWheeler fourWheeler = new FourWheeler("Four Wheeler");
+//        FourWheeler fourWheeler = new FourWheeler("Four Wheeler");
 
 //        System.out.println(fourWheeler.getName() + " goes: ");
 //        fourWheeler.makeNoise();
 
-        System.out.println(fourWheeler.getName() + " goes: ");
-        fourWheeler.breakingDownNoise();
+//        System.out.println(fourWheeler.getName() + " goes: ");
+//        fourWheeler.breakingDownNoise();
 
         // Below is with the constructor that accepts a string as an arg:
 
-        Car car = new Car("Honda Accord");
-        System.out.println(car.getName() + " goes: ");
-        car.makeNoise();
+//        Car car = new Car("Honda Accord");
+//        System.out.println(car.getName() + " goes: ");
+//        car.makeNoise();
 
         // Below is with the constructor that accepts a string as an arg:
+
+//        Motorcycle motorcycle = new Motorcycle("Harley");
+//        System.out.println(motorcycle.getName() + " goes: ");
+//        motorcycle.makeNoise();
 
         Motorcycle motorcycle = new Motorcycle("Harley");
-        System.out.println(motorcycle.getName() + " goes: ");
-        motorcycle.makeNoise();
+        Car car = new Car("Honda Accord");
+        FourWheeler fourWheeler = new FourWheeler("Four Wheeler");
+        Vehicle vehicle = new Vehicle("Ford F-150");
 
+        System.out.println(motorcycle.getName());
+        System.out.println(car.getName());
+        System.out.println(fourWheeler.getName());
+        System.out.println(vehicle.getName());
     }
 }
