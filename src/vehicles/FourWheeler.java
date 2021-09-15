@@ -10,4 +10,12 @@ public class FourWheeler extends Vehicle {
         super.makeNoise();
         System.out.println("CLINK CLANK CLUNK");
     }
+
+    public FourWheeler() {
+
+    }
+
+    public FourWheeler(String name) {
+        super(name);
+    }
 }
