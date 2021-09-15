@@ -19,4 +19,13 @@ public class Bird {
     public void move() {
         System.out.println("Flap flap");
     }
+
+    public Bird() {
+        // By default, super(); runs immediately. If not hard coded in, the compiler will add it on its own.
+        super();
+    }
+
+    public Bird(String name) {
+        this.name = name;
+    }
 }

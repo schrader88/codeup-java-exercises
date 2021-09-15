@@ -6,4 +6,9 @@ public class Duck extends Bird {
     public void makeNoise() {
         System.out.println("Quack quack");
     }
+
+    public Duck() {
+        // By default, super(); runs immediately. If not hard coded in, the compiler will add it on its own.
+        super();
+    }
 }

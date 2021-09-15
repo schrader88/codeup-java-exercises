@@ -2,8 +2,13 @@ package birds;
 
 public class BirdTest {
     public static void main(String[] args) {
-        Bird cardinal = new Bird();
-        cardinal.setName("Cardinal");
+        // Below is using constructor with parameter:
+
+        Bird cardinal = new Bird("Cardinal");
+
+        // Below is for default constructor:
+
+//        cardinal.setName("Cardinal");
         System.out.println(cardinal.getName() + " says: ");
         cardinal.makeNoise();
         System.out.println(cardinal.getName() + " goes: ");
