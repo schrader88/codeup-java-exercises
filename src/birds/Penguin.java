@@ -10,4 +10,8 @@ public class Penguin extends Bird{
         // By default, super(); runs immediately. If not hard coded in, the compiler will add it on its own.
         super();
     }
+
+    public Penguin(String name) {
+        this.setName(name);
+    }
 }

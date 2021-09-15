@@ -11,4 +11,8 @@ public class Duck extends Bird {
         // By default, super(); runs immediately. If not hard coded in, the compiler will add it on its own.
         super();
     }
+
+    public Duck(String name) {
+        this.setName(name);
+    }
 }
