@@ -41,14 +41,18 @@ public class VehicleTest {
 //        System.out.println(motorcycle.getName() + " goes: ");
 //        motorcycle.makeNoise();
 
-        Motorcycle motorcycle = new Motorcycle("Harley");
-        Car car = new Car("Honda Accord");
-        FourWheeler fourWheeler = new FourWheeler("Four Wheeler");
-        Vehicle vehicle = new Vehicle("Ford F-150");
+//        Motorcycle motorcycle = new Motorcycle("Harley");
+//        Car car = new Car("Honda Accord");
+//        FourWheeler fourWheeler = new FourWheeler("Four Wheeler");
+//        Vehicle vehicle = new Vehicle("Ford F-150");
 
-        System.out.println(motorcycle.getName());
-        System.out.println(car.getName());
-        System.out.println(fourWheeler.getName());
-        System.out.println(vehicle.getName());
+//        System.out.println(motorcycle.getName());
+//        System.out.println(car.getName());
+//        System.out.println(fourWheeler.getName());
+//        System.out.println(vehicle.getName());
+
+        GoKart goKart = new GoKart();
+
+        goKart.makeNoise();
     }
 }

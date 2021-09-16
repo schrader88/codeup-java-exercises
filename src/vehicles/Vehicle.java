@@ -7,7 +7,6 @@ public class Vehicle {
 
     public void makeNoise() {
         System.out.println("VROOOOOOOM");
-        System.out.println("SKRRRRRRRT");
     }
 
     public String getName() {

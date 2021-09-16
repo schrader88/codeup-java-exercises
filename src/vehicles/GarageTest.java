@@ -2,7 +2,7 @@ package vehicles;
 
 public class GarageTest {
     public static void main(String[] args) {
-        Vehicle[] vehicles = new Vehicle[4];
+        Vehicle[] vehicles = new Vehicle[5];
 
         vehicles[0] = new FourWheeler();
         vehicles[0].setName("Custom Four Wheeler");
@@ -12,6 +12,9 @@ public class GarageTest {
         vehicles[2].setName("Harley");
         vehicles[3] = new Car();
         vehicles[3].setName("Honda Accord");
+        vehicles[4] = new GoKart("Custom Go Kart");
+//        vehicles[4] = new GoKart();
+//        vehicles[4].setName("Custom Go Kart");
 
         FourWheeler greenFourWheeler = new FourWheeler();
         greenFourWheeler.setName("Big Green Four Wheeler");
@@ -23,10 +26,10 @@ public class GarageTest {
 
         // Bonus:
 
-        Vehicle customerVehicle = myGarage.findVehicle("NOT Harley", vehicles);
-        Vehicle customerVehicle2 = myGarage.findVehicle("Big Green Four Wheeler", vehicles);
+//        Vehicle customerVehicle = myGarage.findVehicle("NOT Harley", vehicles);
+//        Vehicle customerVehicle2 = myGarage.findVehicle("Big Green Four Wheeler", vehicles);
 
-        System.out.println(customerVehicle.getName());
-        System.out.println(customerVehicle2.getName());
+//        System.out.println(customerVehicle.getName());
+//        System.out.println(customerVehicle2.getName());
     }
 }
