@@ -1,4 +1,4 @@
-package medias;
+package library;
 
 class Newspaper extends Media{
     @Override
@@ -12,4 +12,14 @@ class Newspaper extends Media{
     }
 
 
+
+    @Override
+    public String grab() {
+        return "You grab a newspaper.";
+    }
+
+    @Override
+    public String interactWith() {
+        return "A newspaper is read.";
+    }
 }
