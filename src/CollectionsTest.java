@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CollectionsTest {
@@ -10,8 +11,13 @@ public class CollectionsTest {
       input arraylist but without 2s.
  */
 
+//    public static ArrayList<Integer> omit2s(ArrayList<Integer> integers) {
+//        integers.removeIf(number -> number == 2);
+//        return integers;
+//    }
+
     public static ArrayList<Integer> omit2s(ArrayList<Integer> integers) {
-        integers.removeIf(number -> number == 2);
+        integers.removeAll(Arrays.asList(2));
         return integers;
     }
 
