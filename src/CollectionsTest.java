@@ -11,10 +11,14 @@ public class CollectionsTest {
       input arraylist but without 2s.
  */
 
+    // Version of method below is using removeIf. Want to learn more about this. What is "->"?
+
 //    public static ArrayList<Integer> omit2s(ArrayList<Integer> integers) {
 //        integers.removeIf(number -> number == 2);
 //        return integers;
 //    }
+
+    // Version of method below is using removeAll with Arrays.asList(). IntelliJ suggests using List.of(). Why?
 
     public static ArrayList<Integer> omit2s(ArrayList<Integer> integers) {
         integers.removeAll(Arrays.asList(2));
@@ -22,7 +26,7 @@ public class CollectionsTest {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<Integer> numbers = new ArrayList<>();
 
         numbers.add(1);
         numbers.add(2);
