@@ -6,7 +6,13 @@ public class Input {
     private Scanner scanner;
 
     public String getString() {
-        System.out.println("Please enter a string: ");
+        System.out.println("Please enter value here: ");
+        String userInput = scanner.nextLine();
+        return userInput;
+    }
+
+    public String getString(String prompt) {
+        System.out.println(prompt);
         String userInput = scanner.nextLine();
         return userInput;
     }
@@ -27,7 +33,7 @@ public class Input {
 
         do {
             System.out.println("Please enter a number between " + min + " and " + max + ": ");
-            userInt = scanner.nextInt();
+            userInt = Integer.valueOf(getString("Enter number here: "));
 
 
         } while (userInt > max || userInt < min);
@@ -36,8 +42,7 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Please enter a number: ");
-        int userInt = scanner.nextInt();
+        int userInt = Integer.valueOf(getString("Enter number here: "));
 
         return userInt;
     }
@@ -47,7 +52,7 @@ public class Input {
 
         do {
             System.out.println("Please enter a number between " + min + " and " + max + ": ");
-            userInt = scanner.nextDouble();
+            userInt = Double.valueOf(getString("Enter number here: "));
 
 
         } while (userInt > max || userInt < min);
@@ -56,8 +61,7 @@ public class Input {
     }
 
     public double getDouble() {
-        System.out.println("Please enter a decimal number: ");
-        double userDbl = scanner.nextDouble();
+        double userDbl = Double.valueOf(getString("Enter number here: "));
 
         return userDbl;
     }

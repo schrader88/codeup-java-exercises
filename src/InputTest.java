@@ -10,5 +10,29 @@ public class InputTest {
 //        System.out.println(input.getInt());
 //        System.out.println(input.getDouble(1.00, 10.00));
 //        System.out.println(input.getDouble());
+
+        try {
+            input.getInt(1, 10);
+        } catch (NumberFormatException nfx) {
+            System.out.println("That is not a number.");
+        }
+
+        try {
+            input.getDouble(1, 10);
+        } catch (NumberFormatException nfx) {
+            System.out.println("That is not a number.");
+        }
+
+        try {
+            input.getInt();
+        } catch (NumberFormatException nfx) {
+            System.out.println("That is not a number.");
+        }
+
+        try {
+            input.getDouble();
+        } catch (NumberFormatException nfx) {
+            System.out.println("That is not a number.");
+        }
     }
 }
