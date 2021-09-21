@@ -52,8 +52,6 @@ public class ExceptionsTest {
 //        et.subListMaker("This is my sentence and it is good.");
 //        et.subListMaker(null);
 
-
-
 //        try {
 //            String newString = "STRING";
 //            System.out.println(newString.length());
@@ -63,5 +61,20 @@ public class ExceptionsTest {
 //            System.out.println(oob.getMessage());
 //            oob.printStackTrace();
 //        }
+        try {
+            Lizard lizardKingOne = new Lizard("");
+        } catch (IllegalArgumentException iax) {
+            System.out.println("That, sir, is an illegal lizard.");
+        }
+        try {
+            Lizard lizardKingTwo = new Lizard(null);
+        } catch (IllegalArgumentException iax) {
+            System.out.println("That, sir, is an illegal lizard.");
+        }
+        try {
+            Lizard lizardKingThree = new Lizard("Kyle");
+        } catch (IllegalArgumentException iax) {
+            System.out.println("That, sir, is an illegal lizard.");
+        }
     }
 }
