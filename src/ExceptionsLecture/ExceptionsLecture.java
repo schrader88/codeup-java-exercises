@@ -44,4 +44,14 @@ public class ExceptionsLecture {
         }
     }
 
+    public void echoWord() throws IllegalArgumentException {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("I am a parrot. Please say something so I can parrot you.");
+        String userInput = sc.nextLine();
+        if (userInput.equalsIgnoreCase("curses")) {
+            throw new IllegalArgumentException();
+        }
+        System.out.println(userInput);
+    }
+
 }

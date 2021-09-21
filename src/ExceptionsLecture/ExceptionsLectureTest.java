@@ -14,7 +14,9 @@ public class ExceptionsLectureTest {
 
         ExceptionsLecture el = new ExceptionsLecture();
 
-        el.askForAnInteger();
-        el.aMoreComplexAskForInteger();
+//        el.askForAnInteger();
+//        el.aMoreComplexAskForInteger();
+
+        el.echoWord();
     }
 }
