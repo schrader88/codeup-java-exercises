@@ -44,14 +44,24 @@ public class ExceptionsLecture {
         }
     }
 
-    public void echoWord() throws IllegalArgumentException {
+//    public void echoWord() throws IllegalArgumentException {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("I am a parrot. Please say something so I can parrot you.");
+//        String userInput = sc.nextLine();
+//        if (userInput.equalsIgnoreCase("curses")) {
+//            throw new IllegalArgumentException();
+//        }
+//        System.out.println(userInput);
+//    }
+
+
+    public void echoWord() throws CusswordException {
         Scanner sc = new Scanner(System.in);
         System.out.println("I am a parrot. Please say something so I can parrot you.");
         String userInput = sc.nextLine();
         if (userInput.equalsIgnoreCase("curses")) {
-            throw new IllegalArgumentException();
+            throw new CusswordException("How dare you? We don't allow that sort of language in here.");
         }
         System.out.println(userInput);
     }
-
 }

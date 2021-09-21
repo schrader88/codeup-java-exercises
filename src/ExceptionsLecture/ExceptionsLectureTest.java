@@ -17,6 +17,16 @@ public class ExceptionsLectureTest {
 //        el.askForAnInteger();
 //        el.aMoreComplexAskForInteger();
 
-        el.echoWord();
+//        try {
+//            el.echoWord();
+//        } catch (IllegalArgumentException iax) {
+//            System.out.println("That is an illegal argument");
+//        }
+
+        try {
+            el.echoWord();
+        } catch (CusswordException cx) {
+            System.out.println(cx.getMessage());
+        }
     }
 }
