@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class MyMathMethods {
@@ -30,6 +31,30 @@ public class MyMathMethods {
         int userSec = scanner.nextInt();
 
         return userFirst * userSec;
+    }
+
+    public static int quotient(int num1, int num2) {
+        return num1/num2;
+    }
+
+    public static double quotient(double num1, double num2) {
+        return num1/num2;
+    }
+
+    public static int arraySum(int[] numbers) {
+        int sum = 0;
+        for (int n : numbers) {
+            sum += n;
+        }
+        return sum;
+    }
+
+    public static double arraySum(double[] numbers) {
+        double sum = 0;
+        for (double n : numbers) {
+            sum += n;
+        }
+        return sum;
     }
 
 }
