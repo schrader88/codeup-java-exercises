@@ -2,20 +2,20 @@ package FileIOLecture;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 public class FileIOLecture {
-    public static void main(String[] args) {
-//        Path path = Paths.get("src");
-//        System.out.println(path);
-//        System.out.println(path.toAbsolutePath());
-//        Path pathToThisLecture = Paths.get("FileIOLecture", "FileIOLecture.java");
-//        System.out.println(pathToThisLecture);
-        Path pathToOurDataDir = Paths.get("src/data");
-//        System.out.println(pathToOurDataDir);
+    public void readFileAndOutput(Path pathToFile) {
+        List<String> linesInTheFile = new ArrayList<>();
         try {
-            Files.createDirectories(pathToOurDataDir);
+            linesInTheFile = Files.readAllLines(pathToFile);
         } catch (IOException ioe) {
             ioe.printStackTrace();
+        }
+        for (String line : linesInTheFile) {
+            System.out.println(line);
         }
     }
 }
