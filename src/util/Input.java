@@ -30,38 +30,68 @@ public class Input {
 
     public int getInt(int min, int max) {
         int userInt;
+        System.out.println("Please enter a number between " + min + " and " + max + ": ");
 
-        do {
-            System.out.println("Please enter a number between " + min + " and " + max + ": ");
+        try {
             userInt = Integer.valueOf(getString("Enter number here: "));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("That is not a number!");
+            return getInt(min, max);
+        }
 
-
-        } while (userInt > max || userInt < min);
+        if (userInt > max || userInt < min) {
+            System.out.println("That number is not within " + min + " and " + max + ". Try again.");
+            return getInt(min, max);
+        }
 
         return userInt;
     }
 
     public int getInt() {
-        int userInt = Integer.valueOf(getString("Enter number here: "));
+        int userInt;
+
+        try {
+            userInt = Integer.valueOf(getString("Enter number here: "));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("That is not a number!");
+            return getInt();
+        }
 
         return userInt;
     }
 
     public double getDouble(double min, double max) {
         double userInt;
+        System.out.println("Please enter a number between " + min + " and " + max + ": ");
 
-        do {
-            System.out.println("Please enter a number between " + min + " and " + max + ": ");
+        try {
             userInt = Double.valueOf(getString("Enter number here: "));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("That is not a number!");
+            return getDouble(min, max);
+        }
 
-
-        } while (userInt > max || userInt < min);
+        if (userInt > max || userInt < min) {
+            System.out.println("That number is not within " + min + " and " + max + ". Try again.");
+            return getDouble(min, max);
+        }
 
         return userInt;
     }
 
     public double getDouble() {
-        double userDbl = Double.valueOf(getString("Enter number here: "));
+        double userDbl;
+
+        try {
+            userDbl = Double.valueOf(getString("Enter number here: "));
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("That is not a number!");
+            return getDouble();
+        }
 
         return userDbl;
     }
