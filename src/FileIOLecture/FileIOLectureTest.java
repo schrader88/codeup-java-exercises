@@ -1,7 +1,10 @@
 package FileIOLecture;
 
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.List;
 
@@ -54,6 +57,12 @@ public class FileIOLectureTest {
         FileIOLecture fiol = new FileIOLecture();
 
         fiol.readFileAndOutput(pathToOurFile);
+
+        try {
+            Files.writeString(pathToOurFile, "Messalina\n", StandardOpenOption.APPEND);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
 
     }
 }
