@@ -18,13 +18,13 @@ public class Movie {
         this.category = category;
     }
 
-    public Movie(String name, String category, String director) {
-        try {
+    public Movie(String name, String category, String director) throws IllegalArgumentException {
+        if (name == null || name.isBlank() || category == null || category.isBlank() || director == null || director.isBlank()) {
+            throw new IllegalArgumentException();
+        } else {
             this.name = name;
             this.category = category;
             this.director = director;
-        } catch (IllegalArgumentException iax) {
-            iax.printStackTrace();
         }
     }
 
