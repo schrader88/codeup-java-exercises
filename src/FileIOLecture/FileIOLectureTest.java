@@ -5,7 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class FileIOLectureTest {
@@ -56,13 +58,53 @@ public class FileIOLectureTest {
 //        }
         FileIOLecture fiol = new FileIOLecture();
 
+//        fiol.readFileAndOutput(pathToOurFile);
+
+//        try {
+//            Files.writeString(pathToOurFile, "Messalina\n", StandardOpenOption.APPEND);
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
+
+//        fiol.readFileAndOutput(pathToOurFile);
+
+        List<String> lateImperials = new ArrayList<>();
+
+        lateImperials.add("Galla Placidia");
+        lateImperials.add("Theodora");
+        lateImperials.add("Licinia Eudoxia");
+
+//        try {
+//            Files.write(pathToOurFile, lateImperials, StandardOpenOption.APPEND);
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
+
+//        fiol.readFileAndOutput(pathToOurFile);
+
+        List<String> currentList = new ArrayList<>();
+
+//        try {
+//            currentList = Files.readAllLines(pathToOurFile);
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
+
+        Iterator<String> listIterator = currentList.iterator();
+
+//        while (listIterator.hasNext()) {
+//            String item = listIterator.next();
+//            if (item.equalsIgnoreCase("Claudius")) {
+//                listIterator.remove();
+//            }
+//        }
+//
+//        try {
+//            Files.write(pathToOurFile, currentList);
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
+
         fiol.readFileAndOutput(pathToOurFile);
-
-        try {
-            Files.writeString(pathToOurFile, "Messalina\n", StandardOpenOption.APPEND);
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
-
     }
 }
