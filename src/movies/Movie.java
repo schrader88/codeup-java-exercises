@@ -8,6 +8,7 @@ public class Movie {
 
     private String name;
     private String category;
+    private String director;
 
     public Movie() {
     }
@@ -15,6 +16,16 @@ public class Movie {
     public Movie(String name, String category) {
         this.name = name;
         this.category = category;
+    }
+
+    public Movie(String name, String category, String director) {
+        try {
+            this.name = name;
+            this.category = category;
+            this.director = director;
+        } catch (IllegalArgumentException iax) {
+            iax.printStackTrace();
+        }
     }
 
     public void setCategory(String category) {
@@ -31,6 +42,14 @@ public class Movie {
 
     public String getName() {
         return name;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public String getDirector() {
+        return director;
     }
 
     public void runMovieApplication() {
