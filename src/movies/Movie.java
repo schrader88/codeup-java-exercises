@@ -8,7 +8,6 @@ public class Movie {
 
     private String name;
     private String category;
-    private String director;
 
     public Movie() {
     }
@@ -16,16 +15,6 @@ public class Movie {
     public Movie(String name, String category) {
         this.name = name;
         this.category = category;
-    }
-
-    public Movie(String name, String category, String director) throws IllegalArgumentException {
-        if (name == null || name.isBlank() || category == null || category.isBlank() || director == null || director.isBlank()) {
-            throw new IllegalArgumentException();
-        } else {
-            this.name = name;
-            this.category = category;
-            this.director = director;
-        }
     }
 
     public void setCategory(String category) {
@@ -42,14 +31,6 @@ public class Movie {
 
     public String getName() {
         return name;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public String getDirector() {
-        return director;
     }
 
     public void runMovieApplication() {
