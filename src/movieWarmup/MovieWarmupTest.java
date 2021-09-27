@@ -11,5 +11,7 @@ public class MovieWarmupTest {
         System.out.println(mw.getName());
 
         System.out.println(comedy.isFunny());
+
+        System.out.println(mw.audienceReaction());
     }
 }

@@ -4,7 +4,7 @@ import movies.MoviesArray;
 
 import java.util.Scanner;
 
-public class MovieWarmup {
+public class MovieWarmup implements Entertains{
 
     private String name;
     private String director;
@@ -35,6 +35,10 @@ public class MovieWarmup {
 
     public String getDirector() {
         return director;
+    }
+
+    public String audienceReaction() {
+        return "Ooooh " + this.name + " was so awesome!";
     }
 
  }
