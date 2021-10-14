@@ -8,16 +8,31 @@
 //        System.out.println(flipOuterCase(“cAt”)); // CAT
 //        System.out.println(flipOuterCase(“caT”)); // Cat
 
-// Work in progress
-
 public class JavaDrills {
     public static String flipOuterCase(String str) {
-        int length = str.length();
-        char first = str.charAt(0);
-        char last = str.charAt(length - 1);
 
+        char[] chars = str.toCharArray();
 
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            boolean firstOrLastChar = chars[i] == chars[0] || chars[i] == chars[chars.length - 1];
+            if (Character.isUpperCase(c)) {
+                if (firstOrLastChar) {
+                    chars[i] = Character.toLowerCase(c);
+                }
+            } else if (Character.isLowerCase(c)) {
+                if (firstOrLastChar) {
+                    chars[i] = Character.toUpperCase(c);
+                }
+            }
+        }
+        return new String(chars);
+    }
 
-        return "";
+    public static void main(String[] args) {
+        System.out.println(flipOuterCase("cat")); // CaT
+        System.out.println(flipOuterCase("CaT")); // cat
+        System.out.println(flipOuterCase("cAt")); // CAT
+        System.out.println(flipOuterCase("caT")); // Cat
     }
 }
