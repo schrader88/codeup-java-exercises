@@ -8,6 +8,9 @@
 //        System.out.println(flipOuterCase(“cAt”)); // CAT
 //        System.out.println(flipOuterCase(“caT”)); // Cat
 
+import java.util.Arrays;
+import java.util.List;
+
 public class JavaDrills {
     public static String flipOuterCase(String str) {
 
@@ -29,10 +32,29 @@ public class JavaDrills {
         return new String(chars);
     }
 
+    public static int returnTotalDifference(List<Integer> integerListOne, List<Integer> integerListTwo) {
+        int sumOfFirst = 0;
+        int sumOfSecond = 0;
+
+        for (int integer : integerListOne) {
+            sumOfFirst += integer;
+        }
+
+        for (int integer : integerListTwo) {
+            sumOfSecond += integer;
+        }
+
+        return sumOfFirst - sumOfSecond;
+    }
+
     public static void main(String[] args) {
         System.out.println(flipOuterCase("cat")); // CaT
         System.out.println(flipOuterCase("CaT")); // cat
         System.out.println(flipOuterCase("cAt")); // CAT
         System.out.println(flipOuterCase("caT")); // Cat
+
+        System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
+        System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
+        System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
     }
 }
