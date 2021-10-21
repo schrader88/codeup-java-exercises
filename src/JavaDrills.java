@@ -47,6 +47,27 @@ public class JavaDrills {
         return sumOfFirst - sumOfSecond;
     }
 
+    public static String flipInnerCase(String str) {
+        char[] chars = str.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            boolean middleChars = chars[i] != chars[0] && chars[i] != chars[chars.length - 1];
+            if (Character.isUpperCase(c)) {
+                if (middleChars) {
+                    chars[i] = Character.toLowerCase(c);
+                }
+            } else if (Character.isLowerCase(c)) {
+                if (middleChars) {
+                    chars[i] = Character.toUpperCase(c);
+                }
+            }
+        }
+        return new String(chars);
+    }
+
+
+
     public static void main(String[] args) {
         System.out.println(flipOuterCase("cat")); // CaT
         System.out.println(flipOuterCase("CaT")); // cat
@@ -56,5 +77,11 @@ public class JavaDrills {
         System.out.println(returnTotalDifference(Arrays.asList(10, 2, 3), Arrays.asList(1, 2, 3)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7)));
         System.out.println(returnTotalDifference(Arrays.asList(10, 1), Arrays.asList(1, 7, 1)));
+
+        System.out.println(flipInnerCase("cat")); // cAt
+        System.out.println(flipInnerCase("CaT")); // CAT
+        System.out.println(flipInnerCase("caT")); // cAT
+        System.out.println(flipInnerCase("codeup")); // cODEUp
+        System.out.println(flipInnerCase("CoDeup")); // COdEUp
     }
 }
